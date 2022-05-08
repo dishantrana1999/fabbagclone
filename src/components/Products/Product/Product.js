@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-//  import styles from "product.module.css"
+ 
  import "./Product.css";
 
 // Redux
@@ -10,30 +10,10 @@ import Subscription from "./subscription";
 
 
 const Product = ({ product, addToCart, loadCurrentItem }) => {
-  const [set,show] = useState(true)
-  const handlePlan =() => {
-    // set(false) 
-    show((set)=>!set)
-    
-  }
-  
-  const handleDes =() => {
-    // set(true) 
-    show((set)=>!set)
-  }
+  const [index,setIndex]=useState(0)
+
 
   
-
-  const handlePolicy =() => {
-    // set(true) 
-    show((set)=>!set)
-  }
-
-  
-  const handleReviews =() => {
-    // set(true) 
-    show((set)=>!set)
-  }
 
   // <div className={styles.product}>
   //     <img
@@ -79,7 +59,7 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
         <div id="secondbox">
           <p className="p">Home</p>
           <h1>{product.title}</h1>
-          <h1>{product.price}</h1>
+          <h1>Rs.{product.price}</h1>
           <p>
             {product.description}
           </p>
@@ -102,14 +82,14 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
       {/* 2nd Part */}
       <div>
         <div id="conti">
-          <div >DESCRIPTION</div>
+          <div onClick = {()=>setIndex(0)}>DESCRIPTION</div>
           {/* onClick={handleDes} */}
-          <div onClick={handlePlan}>VIEW PLANS</div>
-          <div onClick={handlePolicy}> RETURN POLICY</div>
-          <div onClick={handleReviews}>CUTOMER REVIEWS</div>
+          <div onClick = {()=>setIndex(1)}>VIEW PLANS</div>
+          <div onClick = {()=>setIndex(2)} > RETURN POLICY</div>
+          <div onClick = {()=>setIndex(3)}>CUTOMER REVIEWS</div>
         </div>
 <span>
-<div id="des" style ={{visibility:set? "visible":"hidden"}}>
+<div id="des" hidden={index!=0}>
           <div className="fon">
             Phew, it's getting hot in here! Unveil the midsummer madness with
             the hottest beauty staples inside the AweSummer May Fab Bag.
@@ -137,7 +117,8 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
             month, customized just for you.
           </div>
         </div>
-        <Subscription/>
+        <div hidden={index!=1}><Subscription/></div>
+        <div></div>
 </span>
       
 
