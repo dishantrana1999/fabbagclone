@@ -8,8 +8,9 @@ import {faDeleteLeft} from "@fortawesome/free-solid-svg-icons"
 
 
 const CartItem = ({ item, adjustQty, removeFromCart }) => {
-
-    
+     
+     
+    console.log(item)
   const [input, setInput] = useState(item.qty);
 
   const onChangeHandler = (e) => {

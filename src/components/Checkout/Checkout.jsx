@@ -7,6 +7,10 @@ import styles from "./Checkout.module.css"
 
 const Checkout = ({ item, adjustQty, removeFromCart }) => {
 
+    let ttprice=localStorage.getItem("total-price")
+
+    console.log(ttprice)
+
     const navigate=useNavigate()
     const handlebacktocart=()=>{
      navigate("/cart")
@@ -16,6 +20,28 @@ const Checkout = ({ item, adjustQty, removeFromCart }) => {
    const [Input,setInput]=useState(initValues)
    const [Errors,setErrors]=useState({})
    const [isSubmit,setIsSubmit]=useState(false)
+   const [coupon,setCoupon]=useState({
+       cname:"",
+   })
+
+   const handlevalue=(e)=>{
+    const {name, value}=e.target;
+
+   setCoupon({
+       ...coupon,
+       [name]:value
+   })
+
+   
+   }
+   const handleCouponcode=(e)=>{
+    if(coupon.cname=="sandeep"){
+        let ttprice=localStorage.getItem("total-price")
+        ttprice=Math.ceil(+ttprice/3);
+
+        localStorage.setItem("total-price",ttprice)
+    }
+   }
   const handleinput=(e)=>{
 
     const {name, value}=e.target;
@@ -230,14 +256,14 @@ const Checkout = ({ item, adjustQty, removeFromCart }) => {
             </div>
             <hr/>
             <div className={styles.couponbox}>
-                <input className={styles.couponinput} placeholder="Discount code"></input>
-                <button className={styles.couponapply}>Apply</button>
+                <input name="cname" onChange={handlevalue} type="text" value={coupon.cname} className={styles.couponinput} placeholder="Discount code"></input>
+                <button onClick={handleCouponcode} className={styles.couponapply}>Apply</button>
             </div>
             <hr/>
             <div>
                 <div className={styles.subtotal}>
                     <p>Subtotal</p>
-                    <h5>1231</h5>
+                    <h5>Rs.{ttprice}</h5>
                 </div>
                 <div className={styles.shippingdet}>
                     <p>Shipping</p>
@@ -246,7 +272,7 @@ const Checkout = ({ item, adjustQty, removeFromCart }) => {
                 <hr/>
                 <div className={styles.totalbill}>
                     <h3>Total</h3>
-                    <h2>3434</h2>
+                    <h2>Rs.{ttprice}</h2>
                 </div>
             </div>
         </div>

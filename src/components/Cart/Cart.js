@@ -22,6 +22,8 @@ const Cart = ({ cart }) => {
      else{
       Navigate("/checkout")
      }
+
+     localStorage.setItem("total-price",totalPrice)
  }
 
   useEffect(() => {
@@ -53,11 +55,12 @@ const Cart = ({ cart }) => {
         {cart.map((item) => (
             <>
              <CartItem key={item.id} item={item} />
-           
+            
             </>
           
          ))}
         </div>
+       
        </div>
        <div className={styles.cart__summary}>
            <div className={styles.total_val}>

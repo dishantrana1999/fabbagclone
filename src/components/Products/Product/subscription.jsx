@@ -12,7 +12,7 @@ const Subscription = () => {
       <>
 <div className={Styles.heading}>
 <h3 className={Styles.title}>
-<span >Subscription</span>
+<h1 style={{textAlign:"center"}} >Subscription</h1>
 </h3>
    </div>
 

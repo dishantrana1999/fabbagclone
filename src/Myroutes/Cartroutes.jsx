@@ -10,6 +10,8 @@ import Empty from '../Empty/Empty'
 import {SignUp} from "../components/LoginSignup/SignUp"
 import {Login} from "../components/LoginSignup/Login"
 import Frontpage from '../components/component_R/Frontpage'
+import Product from '../components/Products/Product/Product'
+
 
 const Cartroutes = ({current}) => {
   return (
@@ -23,6 +25,8 @@ const Cartroutes = ({current}) => {
           <Route exact path="/signup" element={<SignUp/>}/>
           <Route exact path="/login" element={<Login/>}/>
           <Route exact path="/home"  element ={<Frontpage/>}/>
+          <Route exact path="/product" element={<Product/>}/>
+          
     {
       !current ? (
         <Route exact path="/" element={<Products/>} />

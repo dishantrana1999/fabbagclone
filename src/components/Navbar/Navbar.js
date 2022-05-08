@@ -28,6 +28,7 @@ const Navbar = ({ cart }) => {
       </div>
        <Link to="/signup">Signup</Link>
        <Link to="/home">Home</Link>
+       <Link to="/product">Product</Link>
       <Link to="/cart">
         <div className={styles.navbar__cart}>
           <h3 className={styles.cart__title}>Cart</h3>

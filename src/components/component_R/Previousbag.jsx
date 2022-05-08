@@ -17,7 +17,7 @@ const Previousbag = () => {
   <Carousel.Item interval={10000}>
   <div className={Styles.maindiv}>
   <div>
-  <img className={Styles.previmg}  src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3_large.png?v=1646971494"/>
+  <img className={Styles.previmg}   src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3_large.png?v=1646971494"/>
   <p className={Styles.prevpara} >Apr'22 The Sassy Spring Fab Bag</p>
  <p><span className={Styles.span}><em data-translate="from_price">from </em>Rs. 599.00</span></p> 
   </div>
