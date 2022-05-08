@@ -1,0 +1,171 @@
+#main {
+    width: 100%;
+    /* border:2px solid black; */
+}
+
+#boxes {
+    width: 85%;
+    margin: 8% auto;
+    /* border:1px solid green; */
+    height: 500px;
+    display: flex;
+}
+
+#boxes>#firstbox {
+    width: 39%;
+    /* border:1px solid brown; */
+    height: 47%;
+    margin: 4% 3%;
+
+}
+
+#boxes>#secondbox {
+    width: 55%;
+    /* border:1px solid blue; */
+    height: 69%;
+    margin: 4% 2%;
+    text-align: start;
+}
+
+#firstbox>img {
+    width: 100%;
+    height: 100%;
+}
+
+.p {
+    margin-top: 0%;
+    font-size: 20px;
+    color: black;
+}
+
+#buttons {
+    width: 80%;
+    height: 10%;
+    /* border:1px solid green; */
+    margin-left: 1%;
+}
+
+#buttons>button {
+   font-size: 15px;
+   font-family:poppins;
+   width: 72px;
+   height: 35px;  
+}
+
+#but {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 4%;
+}
+
+#image0 {
+    text-align: center;
+    margin-top: -41px;   
+}
+
+#left {
+    width: 100%;
+    text-align: right;
+
+}
+
+img {
+    width: 100%;
+    height: 500px;
+}
+
+#right {
+    width: 17%;
+    height: 40px;
+    /* border:1px solid blue; */
+    margin-left: 77%;
+    margin-top: -50px;
+    display: flex;
+
+}
+
+#right button {
+    margin: 10px 6px;
+}
+
+#conti {
+    width: 50%;
+    height: 55%;
+    /* border:1px solid brown; */
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -50px;
+}
+
+#conti>div {
+    margin-left: 1%;
+    border-radius: 19px;
+    background-color: whitesmoke;
+    padding: 12px;
+    /* border:1px solid black; */
+    color: black;
+    height: 70%;
+}
+
+#conti>div:nth-child(1){
+background: #e5b95f;
+}
+
+#conti>div:nth-child(2):hover{
+    background: #e5b95f;
+}
+
+#conti>div:nth-child(3):hover{
+    background: #e5b95f;
+}
+
+#conti>div:nth-child(4):hover{
+    background: #e5b95f;
+}
+
+#des {
+    width: 50%;
+    border:1px solid yellowgreen;
+    height: 320px;
+    margin: 7% auto;
+    text-align: start;
+    margin-top: 2%;
+    
+    /* visibility: visible; */
+}
+.plans{
+    visibility: hidden;
+}
+
+.policy{
+    visibility: hidden;
+}
+
+.review{
+    visibility: hidden;
+}
+
+
+.fon {
+    font-size: 15px;
+}
+
+.font {
+    font-size: 15x;
+    margin-top: 15px;
+}
+
+#icon{
+    font-size: 30px;
+    color: #686262;
+    margin-bottom: 0%;
+}
+
+
+
+
+
+
