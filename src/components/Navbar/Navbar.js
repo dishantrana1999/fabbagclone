@@ -26,6 +26,8 @@ const Navbar = ({ cart }) => {
       <div className={styles.logohandler}>
           <img   src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" />
       </div>
+       <Link to="/signup">Signup</Link>
+       <Link to="/home">Home</Link>
       <Link to="/cart">
         <div className={styles.navbar__cart}>
           <h3 className={styles.cart__title}>Cart</h3>
@@ -33,6 +35,7 @@ const Navbar = ({ cart }) => {
           <div className={styles.cart__counter}>{cartCount}</div>
         </div>
       </Link>
+      
     </div>
   );
 };

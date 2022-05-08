@@ -7,6 +7,9 @@ import Navbar from '../components/Navbar/Navbar'
 import Products from '../components/Products/Products'
 import SingleItem from '../components/SingleItem/SingleItem'
 import Empty from '../Empty/Empty'
+import {SignUp} from "../components/LoginSignup/SignUp"
+import {Login} from "../components/LoginSignup/Login"
+import Frontpage from '../components/component_R/Frontpage'
 
 const Cartroutes = ({current}) => {
   return (
@@ -17,6 +20,9 @@ const Cartroutes = ({current}) => {
           <Route exact path="/cart" element={<Cart/>} />
           <Route exact path="/checkout" element={<Checkout/>}/>
           <Route exact path="/empty" element={<Empty/>}/>
+          <Route exact path="/signup" element={<SignUp/>}/>
+          <Route exact path="/login" element={<Login/>}/>
+          <Route exact path="/home"  element ={<Frontpage/>}/>
     {
       !current ? (
         <Route exact path="/" element={<Products/>} />
