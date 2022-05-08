@@ -11,21 +11,27 @@ import {SignUp} from "../components/LoginSignup/SignUp"
 import {Login} from "../components/LoginSignup/Login"
 import Frontpage from '../components/component_R/Frontpage'
 import Product from '../components/Products/Product/Product'
+import { Footer } from '../components/dishantNavbar/Footer'
+import { Header } from '../components/dishantNavbar/Header'
+import Heart from '../components/Cart/CartItem/Heart'
 
 
 const Cartroutes = ({current}) => {
   return (
     <div>
+    {/* <Header/> */}
         <Navbar />
+        <div style={{height:"50px"}}></div>
         <Routes>
-          <Route exact path="/" element={<Products/>} />
+          <Route exact path="/products" element={<Products/>} />
           <Route exact path="/cart" element={<Cart/>} />
           <Route exact path="/checkout" element={<Checkout/>}/>
           <Route exact path="/empty" element={<Empty/>}/>
           <Route exact path="/signup" element={<SignUp/>}/>
           <Route exact path="/login" element={<Login/>}/>
-          <Route exact path="/home"  element ={<Frontpage/>}/>
+          <Route exact path="/"  element ={<Frontpage/>}/>
           <Route exact path="/product" element={<Product/>}/>
+          <Route exact path="/heart" element={<Heart/>}/>
           
     {
       !current ? (
@@ -37,6 +43,8 @@ const Cartroutes = ({current}) => {
 
           
         </Routes>
+        <div style={{height:"250px"}}></div>
+        <Footer/>
     </div>
   )
 }

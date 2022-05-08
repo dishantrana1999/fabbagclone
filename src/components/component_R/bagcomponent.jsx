@@ -7,7 +7,7 @@ import  Styles from "./product.module.css";
  const navigate=useNavigate()
  
   const handlegotoProduct=()=>{
-     navigate("/")
+     navigate("/products")
   }
  
   return (
