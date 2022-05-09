@@ -62,11 +62,10 @@ const CartItem = ({ item, adjustQty, removeFromCart }) => {
             <FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon>
           </button>
           </div>
-         
-        
-        
+   
       </div>
-      <hr/>
+      < hr style={{marginTop:"-200px"}}/>
+     
     </div>
   );
 };

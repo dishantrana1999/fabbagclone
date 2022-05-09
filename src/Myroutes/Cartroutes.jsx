@@ -14,6 +14,8 @@ import Product from '../components/Products/Product/Product'
 import { Footer } from '../components/dishantNavbar/Footer'
 import { Header } from '../components/dishantNavbar/Header'
 import Heart from '../components/Cart/CartItem/Heart'
+import CreditCard from '../components/Payment/CreditCard'
+import Thankyou from '../components/Payment/paymentcomponents/Thankyou'
 
 
 const Cartroutes = ({current}) => {
@@ -32,6 +34,8 @@ const Cartroutes = ({current}) => {
           <Route exact path="/"  element ={<Frontpage/>}/>
           <Route exact path="/product" element={<Product/>}/>
           <Route exact path="/heart" element={<Heart/>}/>
+          <Route exact path="/payment" element={<CreditCard/>}/>
+          <Route exact path="/thankyou" element={<Thankyou/>}/>
           
     {
       !current ? (
@@ -43,7 +47,7 @@ const Cartroutes = ({current}) => {
 
           
         </Routes>
-        <div style={{height:"250px"}}></div>
+        <div style={{ height:"250px",marginTop:"150px"}}><h1></h1></div>
         <Footer/>
     </div>
   )

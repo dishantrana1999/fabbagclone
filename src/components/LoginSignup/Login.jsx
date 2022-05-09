@@ -168,7 +168,7 @@ export const Login = ()=>{
         function logingIn(lEmail, lPassword){
             for(let i = 0; i<loginDetails.length; i++){
                 if(loginDetails[i].signupEmail == lEmail && loginDetails[i].signupPassword == lPassword){
-                    return navigate("/home")
+                    return navigate("/")
                 }
             }
             return(  toast.error("ERROR - Wrong Credentials", {

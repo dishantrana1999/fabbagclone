@@ -10,7 +10,7 @@ const INITAL_STATE ={
               "Phew, it's getting hot in here! Unveil the midsummer madness with the hottest beauty staples inside the...",
             price: 599.00,
             image:
-            "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Skincare-1.gif?v=1651909062",
+            "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Skincare-2.gif?v=1652066342",
           },
         
        

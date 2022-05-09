@@ -118,7 +118,22 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
           </div>
         </div>
         <div hidden={index!=1}><Subscription/></div>
-        <div></div>
+        <div hidden={index!=2} style={{width:"50%", margin:'auto',marginTop:"30px"}}>
+          <ul>
+            <li>Returns Policy for FAB BAG Monthly Subscriptions: 100% Happiness or Money-Back Guarantee</li>
+            <li>For more details, please see our Policy here.</li>
+            <li>Should you have any questions regarding this product, please feel free to get in touch with our friendly Customer Experience Team at crew@fabbag.com within 48 hours of receiving the shipment or call us at 022-4896-7878 Mon - Fri, 9am - 7pm.</li>
+          </ul>
+        </div>
+        <div hidden={index!=3} style={{width:"50%", margin:'auto',marginTop:"30px"}} >
+          <div>
+            <h3>Customer Reviews</h3>
+
+          </div>
+          <div style={{display:"flex",justifyContent:"space-between"}}><h4>No reviews yet</h4>
+                <h4 style={{color:"orange",cursor:"pointer"}}>Write a review</h4>
+          </div>
+        </div>
 </span>
       
 

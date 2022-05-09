@@ -92,7 +92,9 @@ const Checkout = ({ item, adjustQty, removeFromCart }) => {
     if(!values.address){
         errors.address="address field is required!";
     }
-     
+    else {
+        navigate("/payment")
+    }     
     return errors;
    }
    
@@ -116,10 +118,7 @@ const Checkout = ({ item, adjustQty, removeFromCart }) => {
                 </div>
                 <div className={styles.upperdiv}>
                     <h4>Contact inforamtion</h4>
-                    <div className={styles.inupperdiv}>
-                    <h5>Already have an account?</h5>
-                    <h5>Login link</h5>
-                    </div>
+                    
                 </div>
                 <div className={styles.emailbox}>
                     <p style={{color:"red"}}>{Errors.email}</p>
