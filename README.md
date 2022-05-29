@@ -1,9 +1,9 @@
 # FabBag Clone:
 <hr>
-*About the Project : Being in Masai at the end of the unit we were assigned with the task of cloning the FabBag website. Our  whole team worked hard and passionately to get it done. During the construct week the work was divided between the team members and each team memeber contributed to the project and helped to get it done within the given time period.
+* About the Project : Being in Masai at the end of the unit we were assigned with the task of cloning the FabBag website. Our  whole team worked hard and passionately to get it done. During the construct week the work was divided between the team members and each team memeber contributed to the project and helped to get it done within the given time period.
 
-*Tech Stack Used: JavaScript HTML CSS React BootStrap
+* Tech Stack Used: JavaScript HTML CSS React BootStrap
 
-*Tools Used To Build. VS-Code Git Zoom Slack
+* Tools Used To Build. VS-Code Git Zoom Slack
 
-*How To Run it Locally: You can download the compelete file,store in a folder. You can run the index.html file using a browser.
+* How To Run it Locally: You can download the compelete file,store in a folder. You can run the index.html file using a browser.
