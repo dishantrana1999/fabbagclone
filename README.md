@@ -6,4 +6,4 @@
 
 * Tools Used To Build. VS-Code Git Zoom Slack
 
-* How To Run it Locally: You can download the compelete file,store in a folder. You can run the index.html file using a browser.
+* How To Run it Locally: You can download the code. Install the dependencies using <b>npm install</b> and then start the react app by <b>npm start</b>
